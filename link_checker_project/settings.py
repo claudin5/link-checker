@@ -43,8 +43,6 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
-
-    'storages',
 ]
 
 MIDDLEWARE = [
