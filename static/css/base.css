@@ -1,0 +1,10 @@
+#result-table {
+    max-height: 35rem;
+    height: auto;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+td, th {
+    padding-right: 1rem;
+}

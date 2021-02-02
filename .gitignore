@@ -1,0 +1,8 @@
+Audubon Text Email Checker-a4912641b021.json
+.env
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+.vscode
