@@ -8,3 +8,8 @@
 td, th {
     padding-right: 1rem;
 }
+
+#logo-img {
+    width: 100%;
+    height: auto;
+}
