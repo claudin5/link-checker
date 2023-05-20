@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['web-production-198b.up.railway.app']
+ALLOWED_HOSTS = ['portfolio-link-checker.up.railway.app']
 
 
 
@@ -77,11 +77,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'link_checker_project.wsgi.application'
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://web-production-198b.up.railway.app'
+    'https://portfolio-link-checker.up.railway.app'
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'https://web-production-198b.up.railway.app'
+    'https://portfolio-link-checker.up.railway.app'
 ]
 
 # Database
