@@ -3,7 +3,6 @@ import requests
 import pandas as pd
 import re
 
-pd.set_option('max_columns', None)
 
 def get_parameter_html_table(url):    
     try:
