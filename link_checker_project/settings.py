@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -54,13 +53,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CSRF_TRUSTED_ORIGINS = [
-    'web-production-198b.up.railway.app'
-]
-
-CORS_ORIGIN_WHITELIST = [
-    'web-production-198b.up.railway.app'
-]
 
 ROOT_URLCONF = 'link_checker_project.urls'
 
@@ -84,6 +76,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'link_checker_project.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = [
+    'web-production-198b.up.railway.app'
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'web-production-198b.up.railway.app'
+]
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
