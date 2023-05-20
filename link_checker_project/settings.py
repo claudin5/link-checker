@@ -28,13 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['web-production-198b.up.railway.app']
 
-CSRF_TRUSTED_ORIGINS = [
-    'web-production-198b.up.railway.app'
-]
-
-CORS_ORIGIN_WHITELIST = [
-    'web-production-198b.up.railway.app'
-]
 
 
 # Application definition
@@ -59,6 +52,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'web-production-198b.up.railway.app'
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'web-production-198b.up.railway.app'
 ]
 
 ROOT_URLCONF = 'link_checker_project.urls'
