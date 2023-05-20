@@ -24,8 +24,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
-ALLOWED_HOSTS = ['portfolio-link-checker.up.railway.app']
+MAIN_HOST = 'link-checker.up.railway.app'
+ALLOWED_HOSTS = [MAIN_HOST,]
 
 
 
@@ -77,11 +77,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'link_checker_project.wsgi.application'
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://portfolio-link-checker.up.railway.app'
+    f'https://{MAIN_HOST}',
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'https://portfolio-link-checker.up.railway.app'
+    f'https://{MAIN_HOST}'
 ]
 
 # Database
