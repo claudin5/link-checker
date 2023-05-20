@@ -77,11 +77,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'link_checker_project.wsgi.application'
 
 CSRF_TRUSTED_ORIGINS = [
-    'web-production-198b.up.railway.app'
+    'https://web-production-198b.up.railway.app'
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'web-production-198b.up.railway.app'
+    'https://web-production-198b.up.railway.app'
 ]
 
 # Database
