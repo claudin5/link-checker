@@ -26,7 +26,15 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['portfolio-link-checker.herokuapp.com', '*']
+ALLOWED_HOSTS = ['web-production-198b.up.railway.app']
+
+CSRF_TRUSTED_ORIGINS = [
+    'web-production-198b.up.railway.app'
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'web-production-198b.up.railway.app'
+]
 
 
 # Application definition
